@@ -1,0 +1,7 @@
+com\example\demo\DemoApplication.class
+com\example\demo\repository\CompanyRepository.class
+com\example\demo\model\Customer.class
+com\example\demo\repository\CustomerRepository.class
+com\example\demo\model\Company.class
+com\example\demo\controller\ServiceRequestController.class
+com\example\demo\model\CompanyType.class
