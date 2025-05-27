@@ -14,7 +14,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 public class ServiceRequestController {
   
   @Autowired
