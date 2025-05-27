@@ -28,7 +28,7 @@ export default function App() {
       
       const API = process.env.REACT_APP_API_URL || "";  
 
-      const res = await fetch(`${API}/api/service-request`, { //const res = await fetch("/api/service-request", {
+      const res = await fetch(`${API}/api/service-request`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
