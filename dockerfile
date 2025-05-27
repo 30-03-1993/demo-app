@@ -14,7 +14,7 @@ RUN mvn -f backend/pom.xml -q clean package -DskipTests
 FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 # Copiamos el artefacto desde la etapa anterior
-COPY --from=builder /workspace/backend/target/*.jar app.jar
+COPY --from=builder /workspace/backend/target/demo-0.0.1-SNAPSHOT.jar app.jar
 
 # Render redirige el tráfico al puerto indicado por $PORT (por defecto 10000)
 ENV PORT 10000
