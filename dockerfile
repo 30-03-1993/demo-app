@@ -18,8 +18,8 @@ WORKDIR /app
 COPY --from=builder /app/backend/target/demo-0.0.1-SNAPSHOT.jar app.jar
 
 # Puerto para Render
-ENV PORT=10000
-EXPOSE 10000
+ENV PORT=8080
+EXPOSE 8080
 
 # Ejecutar Spring Boot
 CMD ["sh", "-c", "java -jar app.jar --server.port=$PORT"]
