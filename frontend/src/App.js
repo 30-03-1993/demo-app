@@ -26,7 +26,7 @@ export default function App() {
       setLoading(true);
       setError(null);
       
-      const API = "https://demo-app-mzmu.onrender.com";  
+      const API = process.env.REACT_APP_API_URL || "";
 
       const res = await fetch(`${API}/api/service-request`, {
         method: "POST",
